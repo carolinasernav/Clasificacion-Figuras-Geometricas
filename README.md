@@ -34,7 +34,7 @@ Al final del entrenamiento, se guardan el modelo (`modelo_formas.h5`) y el histo
 
 Se seleccionan imágenes de cada categoría para mostrar ejemplos del dataset, normalizadas y redimensionadas a 80x80 píxeles.
 
-![Image_Alt]()
+![Image_Alt](https://github.com/carolinasernav/Clasificacion-Figuras-Geometricas/blob/83416b406f7fc83d923bf911fa61906b9ba9505b/Imagenes_Dataset.jpg)
 
 ---
 
