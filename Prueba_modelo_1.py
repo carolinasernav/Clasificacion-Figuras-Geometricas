@@ -1,13 +1,19 @@
-import cv2 as cv, numpy as np,os,random, pickle
+import cv2 as cv
+import numpy as np
+import os, random, pickle
 import matplotlib.pyplot as plt
 import tensorflow as tf
 
+#  Cargar el modelo previamente entrenado
 modelo = tf.keras.models.load_model("modelo_formas.h5")
 
+# Categorías del modelo (orden debe coincidir con el entrenamiento)
 categorias = ['circle', 'kite', 'parallelogram', 'rectangle', 'rhombus', 'square', 'trapezoid', 'triangle']
 
-ruta_test = "E:/ESTUDIO/SEMESTRE 10-2/Sistemas Inteligentes/RN Convolucionales/dataset/test"
+# Ruta de las imagenes de la carpeta test del dataset
+ruta_test = "./data/test"
 
+# Recopilar rutas de imágenes y su clase real
 imagenes_test = []
 for categoria in categorias:
     carpeta = os.path.join(ruta_test, categoria)
@@ -16,9 +22,11 @@ for categoria in categorias:
         if os.path.isfile(ruta_img):
             imagenes_test.append((ruta_img, categoria))
 
+# Seleccionar aleatoriamente entre 8 y 15 imágenes de prueba
 cantidad = random.randint(8, 15)
 imagenes_seleccionadas = random.sample(imagenes_test, cantidad)
 
+# Realizar predicciones y visualizarlas
 plt.figure(figsize=(15, 6))
 for i, (ruta, real_categoria) in enumerate(imagenes_seleccionadas):
     img = cv.imread(ruta)
@@ -40,10 +48,11 @@ for i, (ruta, real_categoria) in enumerate(imagenes_seleccionadas):
 plt.tight_layout()
 plt.show()
 
+# Cargar historial de entrenamiento (si existe) y graficar
 with open("historial_entrenamiento.pkl", "rb") as f:
     historial = pickle.load(f)
 
-# Graficar
+# Graficar Pérdida (loss)
 plt.figure(figsize=(12, 5))
 plt.subplot(1, 2, 1)
 plt.plot(historial['loss'], label='Pérdida entrenamiento')
@@ -51,6 +60,7 @@ plt.plot(historial['val_loss'], label='Pérdida validación')
 plt.legend()
 plt.title('Loss')
 
+# Graficar Precisión (accuracy)
 plt.subplot(1, 2, 2)
 plt.plot(historial['accuracy'], label='Precisión entrenamiento')
 plt.plot(historial['val_accuracy'], label='Precisión validación')
