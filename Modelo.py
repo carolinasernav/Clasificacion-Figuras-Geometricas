@@ -1,7 +1,7 @@
 import cv2 as cv, numpy as np, os, pickle, tensorflow as tf
 
-ruta_train = "E:/ESTUDIO/SEMESTRE 10-2/Sistemas Inteligentes/RN Convolucionales/dataset/train"
-ruta_val = "E:/ESTUDIO/SEMESTRE 10-2/Sistemas Inteligentes/RN Convolucionales/dataset/val"
+ruta_train = "./data/train" # Cambiar por la ruta de la carpeta train del dataset
+ruta_val = "./data/val" # Cambiar por la ruta de la carpeta val del dataset
 
 categorias = ['circle', 'kite', 'parallelogram', 'rectangle', 'rhombus', 'square', 'trapezoid', 'triangle']
 etiqueta = {cat: i for i, cat in enumerate(categorias)}
@@ -17,7 +17,7 @@ def cargar_datos(ruta_base, categorias, etiqueta):
                 continue
             img = cv.resize(img, (80, 80))
             img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
-            img = img / 255.0 # Normalizacion
+            img = img / 255.0 
             datos_x.append(img)
             datos_y.append(etiqueta[categoria])
     return np.array(datos_x), np.array(datos_y)
