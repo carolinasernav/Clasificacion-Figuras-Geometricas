@@ -48,27 +48,15 @@ Se carga una imagen externa, se procesa y se usa el modelo para predecir la clas
 
 ### Prueba de Clasificación en Múltiples Imágenes de Test
 
-Se seleccionan varias imágenes aleatorias del conjunto de test, se clasifican con el modelo y se muestran junto con la clase real y la predicción del modelo con la confianza correspondiente.
-
-Además, se grafican las métricas de pérdida y precisión tanto en entrenamiento como en validación a lo largo de las épocas.
-
-*(Aquí puedes insertar una imagen de la prueba múltiple y las gráficas de entrenamiento)*
+Se seleccionan varias imágenes aleatorias de la carpeta del dataaset test, se clasifican con el modelo y posteriormente se muestran los resultados obtenidos con su confianza correspondiente, como se muestra a continuacion.
+![Image_Alt](https://github.com/carolinasernav/Clasificacion-Figuras-Geometricas/blob/982cad174d8e1b061926a66b91ecdfcf68a6d928/Resultados_P1.png)
 
 ---
 
-## Cómo Usar
+### Gráfias loss y Accuracy
 
-1. Descargar el dataset desde Kaggle (link arriba).  
-2. Organizar el dataset en carpetas `train`, `val` y `test` con subcarpetas por categoría.  
-3. Ejecutar el script de entrenamiento para generar el modelo.  
-4. Usar los scripts de prueba para validar el modelo con imágenes individuales o múltiples.
+Las gráficas muestran una reducción consistente en la pérdida tanto de entrenamiento como de validación, junto con un aumento sostenido en la precisión. Esto indica que el modelo aprendió correctamente a identificar las características de las figuras geométricas y generaliza bien a datos nuevos, sin señales evidentes de sobreajuste. Por tanto, se considera que el desempeño del modelo es sólido y confiable para esta tarea.
 
----
-
-## Contacto
-
-Si tienes preguntas o sugerencias, puedes contactarme a través de mi perfil de GitHub.
+![Image_Alt](https://github.com/carolinasernav/Clasificacion-Figuras-Geometricas/blob/982cad174d8e1b061926a66b91ecdfcf68a6d928/Graficas.png)
 
 ---
-
-*Este repositorio es solo para mostrar el trabajo realizado en clasificación de figuras geométricas.*
