@@ -44,8 +44,9 @@ Se seleccionan imágenes de cada categoría para mostrar ejemplos del dataset, n
 
 Se carga una imagen externa, se procesa y se usa el modelo para predecir la clase de figura geométrica, mostrando la predicción y el nivel de confianza.
 
-![Image_Alt](https://github.com/carolinasernav/Clasificacion-Figuras-Geometricas/blob/7eae8123c5d62f948414341e8342f5910a37ed86/Prueba%20Individual.png)
-
+<p align="center">
+  <img src="https://github.com/carolinasernav/Clasificacion-Figuras-Geometricas/blob/7eae8123c5d62f948414341e8342f5910a37ed86/Prueba%20Individual.png)">
+</p>
 ---
 
 ### Prueba de Clasificación en Múltiples Imágenes de Test
