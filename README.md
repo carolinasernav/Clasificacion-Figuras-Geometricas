@@ -26,6 +26,8 @@ El entrenamiento se realiza durante 20 épocas con un batch size de 32, utilizan
 
 Al final del entrenamiento, se guardan el modelo (`modelo_formas.h5`) y el historial de entrenamiento (`historial_entrenamiento.pkl`).
 
+![Image Alt](https://github.com/carolinasernav/Clasificacion-Figuras-Geometricas/blob/7eae8123c5d62f948414341e8342f5910a37ed86/Epoch.png)
+
 ---
 
 ## Pruebas
@@ -42,7 +44,7 @@ Se seleccionan imágenes de cada categoría para mostrar ejemplos del dataset, n
 
 Se carga una imagen externa, se procesa y se usa el modelo para predecir la clase de figura geométrica, mostrando la predicción y el nivel de confianza.
 
-*(Aquí puedes insertar una imagen del resultado de esta prueba)*
+![Image_Alt](https://github.com/carolinasernav/Clasificacion-Figuras-Geometricas/blob/7eae8123c5d62f948414341e8342f5910a37ed86/Prueba%20Individual.png)
 
 ---
 
