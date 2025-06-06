@@ -6,7 +6,7 @@ Este proyecto consiste en un clasificador de imágenes de figuras geométricas u
 
 ## Dataset
 
-El dataset utilizado para entrenar y validar el modelo proviene de [Kaggle](#) _(https://www.kaggle.com/datasets/reevald/geometric-shapes-mathematics)_. Está dividido en carpetas para entrenar (train), validar (val) y ptobar(test) con categorías de las siguientes figuras:  
+El dataset utilizado para entrenar y validar el modelo proviene de [Kaggle](#) _(https://www.kaggle.com/datasets/reevald/geometric-shapes-mathematics)_. Está dividido en carpetas para entrenar (train), validar (val) y probar(test) con categorías de las siguientes figuras:  
 - circle  
 - kite  
 - parallelogram  
@@ -49,7 +49,7 @@ Se carga una imagen externa, se procesa y se usa el modelo para predecir la clas
 
 ### Prueba de Clasificación en Múltiples Imágenes de Test
 
-Se seleccionan varias imágenes aleatorias de la carpeta del dataaset test, se clasifican con el modelo y posteriormente se muestran los resultados obtenidos con su confianza correspondiente, como se muestra a continuacion.
+Se seleccionan varias imágenes aleatorias de la carpeta del dataset test, se clasifican con el modelo y posteriormente se muestran los resultados obtenidos con su confianza correspondiente, como se muestra a continuacion.
 ![Image_Alt](https://github.com/carolinasernav/Clasificacion-Figuras-Geometricas/blob/982cad174d8e1b061926a66b91ecdfcf68a6d928/Resultados_P1.png)
 
 ---
