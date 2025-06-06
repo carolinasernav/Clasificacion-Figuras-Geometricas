@@ -59,7 +59,7 @@ Se carga una imagen externa, se procesa y se usa el modelo para predecir la clas
 Se seleccionan varias imágenes aleatorias de la carpeta del dataset test, se clasifican con el modelo y posteriormente se muestran los resultados obtenidos con su confianza correspondiente, como se muestra a continuacion.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/45adc758-e3a5-467d-ab07-661a3b2f1b15" alt="Image">
+  <img src="https://github.com/user-attachments/assets/99d5c756-773e-432b-83a3-32d22e2b0dae" alt="Image">
 </p>
 
 ---
@@ -69,6 +69,6 @@ Se seleccionan varias imágenes aleatorias de la carpeta del dataset test, se cl
 Las gráficas muestran una reducción consistente en la pérdida tanto de entrenamiento como de validación, junto con un aumento sostenido en la precisión. Esto indica que el modelo aprendió correctamente a identificar las características de las figuras geométricas y generaliza bien a datos nuevos, sin señales evidentes de sobreajuste. Por tanto, se considera que el desempeño del modelo es sólido y confiable para esta tarea.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/99d5c756-773e-432b-83a3-32d22e2b0dae" alt="Image">
+  <img src="https://github.com/user-attachments/assets/d870e961-5c6c-400a-a91e-b73e85a9b68b" alt="Image">
 </p>
 ---
