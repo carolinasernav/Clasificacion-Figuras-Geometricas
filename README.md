@@ -26,7 +26,9 @@ El entrenamiento se realiza durante 20 épocas con un batch size de 32, utilizan
 
 Al final del entrenamiento, se guardan el modelo (`modelo_formas.h5`) y el historial de entrenamiento (`historial_entrenamiento.pkl`).
 
-![Image Alt](https://github.com/carolinasernav/Clasificacion-Figuras-Geometricas/blob/7eae8123c5d62f948414341e8342f5910a37ed86/Epoch.png)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9deb0bec-d146-4c42-9620-fcc6fa6cc1b6" alt="Image">
+</p>
 
 ---
 
@@ -36,7 +38,9 @@ Al final del entrenamiento, se guardan el modelo (`modelo_formas.h5`) y el histo
 
 Se seleccionan imágenes de cada categoría para mostrar ejemplos del dataset, normalizadas y redimensionadas a 80x80 píxeles.
 
-![Image_Alt](https://github.com/carolinasernav/Clasificacion-Figuras-Geometricas/blob/83416b406f7fc83d923bf911fa61906b9ba9505b/Imagenes_Dataset.jpg)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f5ad6ae0-cce1-47d0-b041-252b380324df" alt="Image">
+</p>
 
 ---
 
@@ -44,13 +48,19 @@ Se seleccionan imágenes de cada categoría para mostrar ejemplos del dataset, n
 
 Se carga una imagen externa, se procesa y se usa el modelo para predecir la clase de figura geométrica, mostrando la predicción y el nivel de confianza.
 
-![Image_Alt](https://github.com/carolinasernav/Clasificacion-Figuras-Geometricas/blob/7eae8123c5d62f948414341e8342f5910a37ed86/Prueba%20Individual.png)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/45adc758-e3a5-467d-ab07-661a3b2f1b15" alt="Image">
+</p>
+
 ---
 
 ### Prueba de Clasificación en Múltiples Imágenes de Test
 
 Se seleccionan varias imágenes aleatorias de la carpeta del dataset test, se clasifican con el modelo y posteriormente se muestran los resultados obtenidos con su confianza correspondiente, como se muestra a continuacion.
-![Image_Alt](https://github.com/carolinasernav/Clasificacion-Figuras-Geometricas/blob/982cad174d8e1b061926a66b91ecdfcf68a6d928/Resultados_P1.png)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/45adc758-e3a5-467d-ab07-661a3b2f1b15" alt="Image">
+</p>
 
 ---
 
@@ -58,6 +68,7 @@ Se seleccionan varias imágenes aleatorias de la carpeta del dataset test, se cl
 
 Las gráficas muestran una reducción consistente en la pérdida tanto de entrenamiento como de validación, junto con un aumento sostenido en la precisión. Esto indica que el modelo aprendió correctamente a identificar las características de las figuras geométricas y generaliza bien a datos nuevos, sin señales evidentes de sobreajuste. Por tanto, se considera que el desempeño del modelo es sólido y confiable para esta tarea.
 
-![Image_Alt](https://github.com/carolinasernav/Clasificacion-Figuras-Geometricas/blob/982cad174d8e1b061926a66b91ecdfcf68a6d928/Graficas.png)
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/99d5c756-773e-432b-83a3-32d22e2b0dae" alt="Image">
+</p>
 ---
